@@ -1,0 +1,17 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: #5353FF;
+    --secondary: #12554F;
+    --tertiary: #328079;
+    --primary-back: #F8F8F7;
+    --secondary-back: #EEEBFF;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+}
