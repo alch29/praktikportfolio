@@ -17,11 +17,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ultra&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <header>
             <nav class="menu">
-                <img class="logo" src="img/logo-v3-lille.svg" alt="logo symbol">
+                <a href="#hero"><img class="logo" src="img/logo-v3-lille.svg" alt="logo symbol"></a>
                 <div class="ham-menu">
                     <span></span>
                     <span></span>
@@ -31,18 +35,18 @@
 
             <div class="off-screen-menu">
                 <ul>
-                    <li>OM MIG</li>
-                    <li>PORTFOLIO</li>
-                    <li>KONTAKT</li>
+                    <a href="#om-mig"><li>OM MIG</li></a>
+                    <a href="#portfolio"><li>PORTFOLIO</li></a>
+                    <a href="#kontakt"><li>KONTAKT</li></a>
                 </ul>
             </div>
     </header>
     <main class="grid-container">
-        <section class="hero">
+        <section class="hero" id="hero">
             <h1>Aleksandra Christensen</h1>
             <div class="divider"></div>
             <p>Jeg hedder Aleksandra, jeg er 21 år gammel og er lige nu i gang med 2. semester på multimediedesigner i Odense.</p>
-            <button class="cta">Se mit procesportfolio</button>
+            <button class="cta-hero">Se mit procesportfolio</button>
             <img src="img/hero-illustration-web.jpg" alt="Simpel illustration af en webdesigner">
             <div class="pile">  
                 <div class="pil-left">
@@ -53,7 +57,7 @@
                 </div>
             </div> 
         </section>
-        <section class="om-mig">
+        <section class="om-mig" id="om-mig">
             <h2>LIDT OM MIG</h2>
             <p>Jeg hedder Aleksandra, jeg er 21 år gammel og er lige nu i gang med 2. semester på multimediedesigner i Odense. Jeg har altid haft stor interesse for grafisk og visuelt design og uddannelsen giver mig mulighed for at udnytte mine evner, men også udvikle dem samt lære nye evner og færdigheder. </p>
             <img src="img/billedeheroportfolio-web.png" alt="Et billede af mig selv">
@@ -106,11 +110,14 @@
             </div>
 
         </section>
-        <section class="portfolio">
+        <section class="portfolio" id="portfolio">
             <h2>PORTFOLIO</h2>
+            <div class="portfolio-item">
+                <img src="img/pencil.gif" alt="Animation af en blyant der tegner en cirkel">
+            </div>
 
         </section>
-        <section class="kontakt">
+        <section class="kontakt" id="portfolio">
             <h2>KONTAKT MIG</h2>
             <div class="kontakt-flex">
                 <i class="fa-solid fa-envelope"></i>
@@ -133,7 +140,7 @@
                     <i class="fa-brands fa-square-facebook"></i>
                 </div>
             </div>
-            <button class="cta">Se mit procesportfolio</button>
+            <button class="cta-kontakt">Se mit procesportfolio</button>
         </section>
     </main>
     <footer>

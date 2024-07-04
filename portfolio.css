@@ -22,11 +22,18 @@ footer {
 /* Skrifttyper */
 
 h1 {
-    font-family: "DM Serif Text", serif;
+    font-family: "Ultra", serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 2.2rem;
-    color: var(--primary)
+    font-size: 2rem;
+    color: var(--secondary-back);
+    text-shadow:
+    -1px -1px 0 var(--primary),  
+    1px -1px 0 var(--primary),
+    -1px  1px 0 var(--primary),
+    1px  1px 0 var(--primary),
+    5px  5px 0 var(--primary);
+    text-align: center;
 }
 
 h2 {
@@ -71,9 +78,10 @@ header {
     z-index: 1;
 }
 
-.menu img {
+.menu a {
     width: 25px;
     margin-left: 35px;
+    align-self: center;
 }
 
 .ham-menu {
@@ -143,13 +151,14 @@ header {
     padding: 0;
 }
 
-.off-screen-menu ul li {
+.off-screen-menu ul a {
     color: var(--secondary);
     font-family: "Open Sans", sans-serif;
     font-weight: 600;
     font-style: normal;
     font-size: 1.2rem;
     align-self: center;
+    text-decoration: none;
     padding-top: 25px;
     position: relative;
     cursor: pointer;
@@ -225,6 +234,13 @@ header {
     background-color: var(--primary-back);
     grid-column: span 3;
     padding: 35px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.portfolio h2 {
+    grid-column: span 3;
+    text-align: center;
 }
 
 .kontakt {
@@ -241,10 +257,10 @@ header {
 .divider {
     border: 6px dotted var(--primary);
     border-bottom: 0;
-    margin: 0;
+    margin: 10px 0 0 0;
 }
 
-.cta {
+.cta-hero {
     padding: 8px 20px 8px 20px;
     width: 100%;
     background-color: var(--primary);
@@ -260,8 +276,29 @@ header {
     cursor: pointer;
 }
 
-.cta:hover {
+.cta-hero:hover {
     background-color: var(--primary-back);
+    color: var(--primary)
+}
+
+.cta-kontakt {
+    padding: 8px 20px 8px 20px;
+    width: 100%;
+    background-color: var(--primary);
+    border: 1.5px solid var(--primary);
+    border-radius: 40px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 0.9rem;
+    color: white;
+    box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.3);
+    margin: 20px 0px 20px 0px;
+    cursor: pointer;
+}
+
+.cta-kontakt:hover {
+    background-color: var(--secondary-back);
     color: var(--primary)
 }
 
@@ -349,7 +386,11 @@ header {
 
 .some-flex i:hover {
     color: var(--primary);
-    font-size: 2.2rem;
+}
+
+.portfolio-item img {
+    width: 100%;
+    grid-column: span 3;
 }
 
 /* .pile {
