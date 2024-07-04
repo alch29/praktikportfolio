@@ -5,37 +5,105 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="portfolio.css">
+    <script src="portfolio.js" defer></script>
+
+    <script src="https://kit.fontawesome.com/985c518ea2.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li>OM MIG</li>
-                <li>PORTFOLIO</li>
-                <li>KONTAKT</li>
-            </ul>
-        </nav>
+            <nav class="menu">
+                <img class="logo" src="img/logo-v3-lille.svg" alt="logo symbol">
+                <div class="ham-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+
+            <div class="off-screen-menu">
+                <ul>
+                    <li>OM MIG</li>
+                    <li>PORTFOLIO</li>
+                    <li>KONTAKT</li>
+                </ul>
+            </div>
     </header>
     <main class="grid-container">
         <section class="hero">
             <h1>Aleksandra Christensen</h1>
             <div class="divider"></div>
-            <p></p>
-            <button class="cta"></button>
-            <img>
-
+            <p>Jeg hedder Aleksandra, jeg er 21 år gammel og er lige nu i gang med 2. semester på multimediedesigner i Odense.</p>
+            <button class="cta">Se mit procesportfolio</button>
+            <img src="img/hero-illustration-web.jpg" alt="Simpel illustration af en webdesigner">
+            <div class="pile">  
+                <div class="pil-left">
+                    <span></span>
+                </div>
+                <div class="pil-right">
+                    <span></span>
+                </div>
+            </div> 
         </section>
         <section class="om-mig">
             <h2>LIDT OM MIG</h2>
-            <p></p>
-            <img>
-            <h2>EVNER</h2>
+            <p>Jeg hedder Aleksandra, jeg er 21 år gammel og er lige nu i gang med 2. semester på multimediedesigner i Odense. Jeg har altid haft stor interesse for grafisk og visuelt design og uddannelsen giver mig mulighed for at udnytte mine evner, men også udvikle dem samt lære nye evner og færdigheder. </p>
+            <img src="img/billedeheroportfolio-web.png" alt="Et billede af mig selv">
+            <h2>MINE EVNER</h2>
+            <h3>Progammer</h3>
 
-            <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-            </ul>
+            <div class="pro-grid">
+                <div class="center-text">
+                    <div class="pro-ikon">Ps</div>
+                    <p>Photoshop</p>
+                </div>
+                <div class="center-text">
+                    <div class="pro-ikon">Id</div>
+                    <p>InDesign</p>
+                </div>
+                <div class="center-text">
+                    <div class="pro-ikon">Pr</div>
+                    <p>PremierePro</p>
+                </div>
+                <div class="center-text">
+                    <div class="pro-ikon">Ai</div>
+                    <p>Illustrator</p>
+                </div>
+                <div class="center-text">
+                    <div class="pro-ikon">Ae</div>
+                    <p>AfterEffects</p>
+                </div>
+                <div class="center-text">
+                    <div class="pro-ikon"><i class="fa-brands fa-figma"></i></div>
+                    <p>Figma</p>
+                </div>
+            </div>
+
+            <h3>Kodning</h3>
+
+            <div class="kode-grid">
+                <div class="center-text">
+                    <div class="kode-ikon"><i class="fa-brands fa-html5"></i></div>
+                    <p>HTML</p>
+                </div>
+                <div class="center-text">
+                    <div class="kode-ikon"><i class="fa-brands fa-css3-alt"></i></div>
+                    <p>CSS</p>
+                </div>
+                <div class="center-text">
+                    <div class="kode-ikon"><i class="fa-brands fa-square-js"></i></div>
+                    <p>JavaScript</p>
+                </div>
+                
+            </div>
 
         </section>
         <section class="portfolio">
@@ -44,11 +112,32 @@
         </section>
         <section class="kontakt">
             <h2>KONTAKT MIG</h2>
-
+            <div class="kontakt-flex">
+                <i class="fa-solid fa-envelope"></i>
+                <div>
+                    <p>kontakt mig på mail</p>
+                    <p>alch58546@edu.ucl.dk</p>
+                </div>
+            </div>
+            <div class="kontakt-flex">
+                <i class="fa-solid fa-phone"></i>
+                <div>
+                    <p>Kontakt mig på telefon</p>
+                    <p>+45 25 73 30 52</p>
+                </div>
+            </div>
+            <div>
+                <p>Find mig på sociale medier</p>
+                <div class="some-flex">
+                    <i class="fa-brands fa-linkedin"></i>
+                    <i class="fa-brands fa-square-facebook"></i>
+                </div>
+            </div>
+            <button class="cta">Se mit procesportfolio</button>
         </section>
     </main>
     <footer>
-
+        <p>© Aleksandra Christensen 2024</p>
     </footer>  
 </body>
 </html>
