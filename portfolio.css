@@ -19,6 +19,24 @@ footer {
     background-color: var(--tertiary);
 }
 
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(248, 248, 247, 0.8);
+    backdrop-filter: blur(5px);
+    z-index: 50;
+    opacity: 0;
+    pointer-events: none;
+}
+
+#overlay.active {
+    opacity: 1;
+    pointer-events: all;
+}
+
 /* Skrifttyper */
 
 h1 {
@@ -61,7 +79,7 @@ p {
 /* menu/header */
 
 header {
-    z-index: 1000;
+    z-index: 25;
     position: fixed;
     top: 0;
     left: 0;
@@ -131,7 +149,7 @@ header {
     display: none;
     width: 50%;
     margin-left: 50%;
-    background-color: rgb(248, 248, 247, 0.8);
+    background-color: rgba(248, 248, 247, 0.8);
     backdrop-filter: blur(5px);
     box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.3);
     height: 350px;
@@ -234,8 +252,6 @@ header {
     background-color: var(--primary-back);
     grid-column: span 3;
     padding: 35px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
 }
 
 .portfolio h2 {
@@ -308,7 +324,7 @@ header {
     width: 100%;
     margin: 5px 0px 20px 0px;
     box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.3);
-    border-radius: 14px;
+    border-radius: 10px;
     gap: 10px;
     padding: 10px;
 }
@@ -339,7 +355,7 @@ header {
     width: 100%;
     margin: 5px 0px 20px 0px;
     box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.3);
-    border-radius: 14px;
+    border-radius: 10px;
     padding: 10px;
 }
 
@@ -381,16 +397,28 @@ header {
     font-size: 1.8rem;
     color: var(--secondary);
     cursor: pointer;
-    transition: .3s ease;
+    transition: all .3s ease;
 }
 
 .some-flex i:hover {
     color: var(--primary);
+    transform: scale(1.2);
 }
 
-.portfolio-item img {
+.portfolio-item {
+    margin: 20px 0 20px 0;
+}
+
+.portfolio-item :first-child {
     width: 100%;
-    grid-column: span 3;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.portfolio-item :first-child:hover {
+    opacity: 0.6;
+    transform: scale(1.05);
 }
 
 /* .pile {
@@ -433,6 +461,61 @@ header {
     transform: rotate(-45deg);
     box-shadow: -2px 4px 6px rgba(0, 0, 0, 0.3);
 } */
+
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: .2s ease-in-out;
+    background-color: var(--primary-back);
+    border-radius: 10px;
+    z-index: 100;
+    width: 80%;
+    box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.3);
+}
+
+.modal.active {
+    transform: translate(-50%, -50%) scale(1); 
+}
+
+.modal-header {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modal-header h3 {
+    margin-right: 30px;
+}
+
+.modal-body {
+    padding: 0 20px 20px 20px;
+}
+
+.close-button {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.close-button span {
+    position: absolute;
+    width: 25px;
+    height: 4px;
+    border-radius: 35px;
+    background-color: var(--secondary);
+}
+.close-button span:nth-child(1) {
+    transform: rotate(45deg);
+}
+.close-button span:nth-child(2) {
+    transform: rotate(-45deg);
+}
 
 /* Footer  */
 

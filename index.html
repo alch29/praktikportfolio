@@ -23,6 +23,7 @@
 
 </head>
 <body>
+    <div id="overlay"></div> 
     <header>
             <nav class="menu">
                 <a href="#hero"><img class="logo" src="img/logo-v3-lille.svg" alt="logo symbol"></a>
@@ -62,7 +63,7 @@
             <p>Jeg hedder Aleksandra, jeg er 21 år gammel og er lige nu i gang med 2. semester på multimediedesigner i Odense. Jeg har altid haft stor interesse for grafisk og visuelt design og uddannelsen giver mig mulighed for at udnytte mine evner, men også udvikle dem samt lære nye evner og færdigheder. </p>
             <img src="img/billedeheroportfolio-web.png" alt="Et billede af mig selv">
             <h2>MINE EVNER</h2>
-            <h3>Progammer</h3>
+            <!-- <h3>Progammer</h3> -->
 
             <div class="pro-grid">
                 <div class="center-text">
@@ -91,7 +92,7 @@
                 </div>
             </div>
 
-            <h3>Kodning</h3>
+            <!-- <h3>Kodning</h3> -->
 
             <div class="kode-grid">
                 <div class="center-text">
@@ -112,12 +113,29 @@
         </section>
         <section class="portfolio" id="portfolio">
             <h2>PORTFOLIO</h2>
+            <div data-modal-target="#modal" class="portfolio-item">
+                <video loop muted autoplay aria-label="Animation af Pentia Mobile logo."><source src="img/pentia-logo-animation-updated2_1.mp4" type="video/mp4"></video>
+            </div>
+
+            <div class="modal" id="modal">
+                <div class="modal-header">
+                    <h3>Pentia Mobile logo-animation</h3>
+                    <div data-close-button class="close-button">
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <p>Denne animation har jeg lavet i forbindelse med mit eksamensprojekt på 2. semester, hvor min gruppe og jeg samarbejdede med Pentia Mobile i Odense. Jeg brugte AfterEffects til at lave animationen, hvorefter den blev brugt som intro, til en employer-branding video til Pentia Mobile.</p>
+                </div>
+            </div>
+
             <div class="portfolio-item">
-                <img src="img/pencil.gif" alt="Animation af en blyant der tegner en cirkel">
+                <img src="img/pencil.gif" alt="Animation af blyant som tegner en cirkel.">
             </div>
 
         </section>
-        <section class="kontakt" id="portfolio">
+        <section class="kontakt" id="kontakt">
             <h2>KONTAKT MIG</h2>
             <div class="kontakt-flex">
                 <i class="fa-solid fa-envelope"></i>
@@ -145,6 +163,6 @@
     </main>
     <footer>
         <p>© Aleksandra Christensen 2024</p>
-    </footer>  
+    </footer>
 </body>
 </html>
