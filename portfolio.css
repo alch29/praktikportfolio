@@ -414,6 +414,7 @@ header {
     border-radius: 10px;
     cursor: pointer;
     transition: all .3s ease;
+    box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.3);
 }
 
 .portfolio-item :first-child:hover {
@@ -473,6 +474,8 @@ header {
     z-index: 100;
     width: 80%;
     box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.3);
+    max-height: 500px;
+    overflow: hidden;
 }
 
 .modal.active {
@@ -492,6 +495,14 @@ header {
 
 .modal-body {
     padding: 0 20px 20px 20px;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.modal-body img {
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 6px;
 }
 
 .close-button {
@@ -515,6 +526,68 @@ header {
 }
 .close-button span:nth-child(2) {
     transform: rotate(-45deg);
+}
+
+/* Modal slideshow */
+
+.slideshow-container {
+    position: relative;
+}
+
+.slides {
+    display: none;   
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -20px;
+    padding: 14px;
+    color: var(--primary-back);
+    font-weight: bold;
+    font-size: 24px;
+    transition: 0.6s ease;
+    border-radius: 0 6px 6px 0;
+    user-select: none;
+}
+.next {
+    right: 0;
+    border-radius: 6px 0 0 6px;
+}
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.6);
+}
+
+.dots-container {
+    text-align: center;
+    margin-top: 8px;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: rgba(50, 128, 121, 0.3);
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+  
+.active-dot, .dot:hover {
+    background-color: var(--tertiary);
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+  
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
 }
 
 /* Footer  */
