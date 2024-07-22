@@ -47,29 +47,34 @@ function closeModal(modal) {
 
 //Slideshow:
 
-let slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
+function plusSlides(n, slideshowId) {
+  let slideIndex = parseInt(document.getElementById(slideshowId).getAttribute("data-slide-index"));
+  showSlides(slideIndex += n, slideshowId);
 }
 
-function currentSlide(n) {
-  showSlides(slideIndex = n);
+function currentSlide(n, slideshowId) {
+  showSlides(n, slideshowId);
 }
 
-function showSlides(n) {
+function showSlides(n, slideshowId) {
   let i;
-  let slides = document.getElementsByClassName("slides");
-  let dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
+  let slideshow = document.getElementById(slideshowId);
+  let slides = slideshow.getElementsByClassName("slides");
+  let dots = slideshow.nextElementSibling.getElementsByClassName("dot");
+  if (n > slides.length) {n = 1}
+  if (n < 1) {n = slides.length}
+  slideshow.setAttribute("data-slide-index", n);
   for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
   }
   for (i = 0; i < dots.length; i++) {
     dots[i].className = dots[i].className.replace(" active-dot", "");
   }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active-dot";
+  slides[n-1].style.display = "block";
+  dots[n-1].className += " active-dot";
 }
+
+document.querySelectorAll('.slideshow-container').forEach((slideshow) => {
+  slideshow.setAttribute("data-slide-index", 1);
+  showSlides(1, slideshow.id);
+});

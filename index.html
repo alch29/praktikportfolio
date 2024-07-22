@@ -127,7 +127,7 @@
                     </div>
                 </div>
                 <div class="modal-body">
-                    <p>Denne animation har jeg lavet i forbindelse med mit eksamensprojekt på 2. semester, hvor min gruppe og jeg samarbejdede med Pentia Mobile i Odense. Jeg brugte AfterEffects til at lave animationen, hvorefter den blev brugt som intro, til en employer-branding video til Pentia Mobile.</p>
+                    <p>Denne animation har jeg lavet i forbindelse med mit eksamensprojekt på 2. semester, hvor min gruppe og jeg samarbejdede med Pentia Mobile i Odense. Jeg brugte AfterEffects til at lave animationen, hvorefter den blev brugt som intro, til en employer-branding video.</p>
                 </div>
             </div>
 
@@ -163,7 +163,7 @@
                 </div>
                 <div class="modal-body">
                     <p>Disse billeder har jeg lavet til et instagram-opslag, tiltænkt URK's instagram profil. De blev lavet i forbindelse med et skoleprojekt på 2. semester. Her har jeg brugt en blanding af Photoshop og Illustrator.</p>
-                    <div class="slideshow-container">
+                    <div class="slideshow-container" id="slideshow-1">
                         <div class="slides fade">
                             <img src="img/instagram-opslag/instaopslag-slide1.jpg" alt="Instagram-opslag til Ungdommens Røde Kors, hvor der står: Hvorfor vil unge blive frivillige?, efterfulgt af en ikon og derefter en tekst der lyder: At hjælpe andre.">
                         </div>
@@ -183,22 +183,35 @@
                             <img src="img/instagram-opslag/opslag-mockup-v2-kopi.jpg" alt="Instagram-opslag til Ungdommens Røde Kors, hvor der står: Hvorfor vil unge blive frivillige?, efterfulgt af en ikon og derefter en tekst der lyder: At hjælpe andre.">
                         </div>
 
-                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                        <a class="prev" onclick="plusSlides(-1, 'slideshow-1')">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1, 'slideshow-1')">&#10095;</a>
                     </div>
                     <div class="dots-container">
-                        <span class="dot" onclick="currentSlide(1)"></span>
-                        <span class="dot" onclick="currentSlide(2)"></span>
-                        <span class="dot" onclick="currentSlide(3)"></span>
-                        <span class="dot" onclick="currentSlide(4)"></span>
-                        <span class="dot" onclick="currentSlide(5)"></span>
-                        <span class="dot" onclick="currentSlide(6)"></span>
+                        <span class="dot" onclick="currentSlide(1, 'slideshow-1')"></span>
+                        <span class="dot" onclick="currentSlide(2, 'slideshow-1')"></span>
+                        <span class="dot" onclick="currentSlide(3, 'slideshow-1')"></span>
+                        <span class="dot" onclick="currentSlide(4, 'slideshow-1')"></span>
+                        <span class="dot" onclick="currentSlide(5, 'slideshow-1')"></span>
+                        <span class="dot" onclick="currentSlide(6, 'slideshow-1')"></span>
                     </div>
                 </div>
             </div>
 
             <div data-modal-target="#modal-4" class="portfolio-item">
                 <video loop muted autoplay aria-label="Animation af en blyant, som tegner en cirkel og hopper."><source src="img/pencil-animation_1.mp4" type="video/mp4"></video>
+            </div>
+
+            <div class="modal" id="modal-4">
+                <div class="modal-header">
+                    <h3>CSS- og Illustrator animation</h3>
+                    <div data-close-button class="close-button">
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <p>Denne animation lavede jeg på 1. semester til en skoleopgave, hvor vi lærte at lave et såkaldt spritesheet i Illustrator, som skulle eksporteres som en png-fil, hvorefter vi ved hjælp af HTML og CSS, kunne animere spritesheetet.</p>
+                </div>
             </div>
 
             <div data-modal-target="#modal-5" class="portfolio-item">
@@ -215,6 +228,78 @@
                 </div>
                 <div class="modal-body">
                     <p>Her har jeg gjort brug af Illustrator, for at designe dette logo til Jyderup Haverservice. Mock-uppen af visitkortene er lavet i Photoshop, med et billede taget fra freepik.com.</p>
+                </div>
+            </div>
+
+            <div data-modal-target="#modal-6" class="portfolio-item">
+                <img src="img/tegneserie/tegneserie-mockup.jpg" alt="To kopier af en tegneserie, med en illustration af en kat på omslaget.">
+            </div>
+
+            <div class="modal" id="modal-6">
+                <div class="modal-header">
+                    <h3>Tegneserie sat op til print</h3>
+                    <div data-close-button class="close-button">
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <p>Den her tegneserie lavede jeg i foråret 2023, til et højskole-projekt. Jeg tegnede først det hele i hånden, hvorefter jeg scannede tegningerne, redigerede dem i Photoshop og satte dem derefter op til print i InDesign.</p>
+                    <div class="slideshow-container" id="slideshow-2">
+                        <div class="slides fade">
+                            <img src="img/tegneserie/Raymond1.jpg" alt="Instagram-opslag til Ungdommens Røde Kors, hvor der står: Hvorfor vil unge blive frivillige?, efterfulgt af en ikon og derefter en tekst der lyder: At hjælpe andre.">
+                        </div>
+                        <div class="slides fade">
+                            <img src="img/tegneserie/Raymond2.jpg" alt="Instagram-opslag til Ungdommens Røde Kors, hvor der står: Hvorfor vil unge blive frivillige?, efterfulgt af en ikon og derefter en tekst der lyder: At hjælpe andre.">
+                        </div>
+                        <div class="slides fade">
+                            <img src="img/tegneserie/Raymond3.jpg" alt="Instagram-opslag til Ungdommens Røde Kors, hvor der står: Hvorfor vil unge blive frivillige?, efterfulgt af en ikon og derefter en tekst der lyder: At hjælpe andre.">
+                        </div>
+                        <div class="slides fade">
+                            <img src="img/tegneserie/Raymond4.jpg" alt="Instagram-opslag til Ungdommens Røde Kors, hvor der står: Hvorfor vil unge blive frivillige?, efterfulgt af en ikon og derefter en tekst der lyder: At hjælpe andre.">
+                        </div>
+                        <div class="slides fade">
+                            <img src="img/tegneserie/Raymond5.jpg" alt="Instagram-opslag til Ungdommens Røde Kors, hvor der står: Hvorfor vil unge blive frivillige?, efterfulgt af en ikon og derefter en tekst der lyder: At hjælpe andre.">
+                        </div>
+                        <div class="slides fade">
+                            <img src="img/tegneserie/Raymond6.jpg" alt="Instagram-opslag til Ungdommens Røde Kors, hvor der står: Hvorfor vil unge blive frivillige?, efterfulgt af en ikon og derefter en tekst der lyder: At hjælpe andre.">
+                        </div>
+                        <div class="slides fade">
+                            <img src="img/tegneserie/Raymond7.jpg" alt="Instagram-opslag til Ungdommens Røde Kors, hvor der står: Hvorfor vil unge blive frivillige?, efterfulgt af en ikon og derefter en tekst der lyder: At hjælpe andre.">
+                        </div>
+                        <div class="slides fade">
+                            <img src="img/tegneserie/Raymond8.jpg" alt="Instagram-opslag til Ungdommens Røde Kors, hvor der står: Hvorfor vil unge blive frivillige?, efterfulgt af en ikon og derefter en tekst der lyder: At hjælpe andre.">
+                        </div>
+                        <div class="slides fade">
+                            <img src="img/tegneserie/Raymond9.jpg" alt="Instagram-opslag til Ungdommens Røde Kors, hvor der står: Hvorfor vil unge blive frivillige?, efterfulgt af en ikon og derefter en tekst der lyder: At hjælpe andre.">
+                        </div>
+                        <div class="slides fade">
+                            <img src="img/tegneserie/Raymond10.jpg" alt="Instagram-opslag til Ungdommens Røde Kors, hvor der står: Hvorfor vil unge blive frivillige?, efterfulgt af en ikon og derefter en tekst der lyder: At hjælpe andre.">
+                        </div>
+                        <div class="slides fade">
+                            <img src="img/tegneserie/Raymond11.jpg" alt="Instagram-opslag til Ungdommens Røde Kors, hvor der står: Hvorfor vil unge blive frivillige?, efterfulgt af en ikon og derefter en tekst der lyder: At hjælpe andre.">
+                        </div>
+                        <div class="slides fade">
+                            <img src="img/tegneserie/Raymond12.jpg" alt="Instagram-opslag til Ungdommens Røde Kors, hvor der står: Hvorfor vil unge blive frivillige?, efterfulgt af en ikon og derefter en tekst der lyder: At hjælpe andre.">
+                        </div>
+
+                        <a class="prev" onclick="plusSlides(-1, 'slideshow-2')">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1, 'slideshow-2')">&#10095;</a>
+                    </div>
+                    <div class="dots-container">
+                        <span class="dot" onclick="currentSlide(1, 'slideshow-2')"></span>
+                        <span class="dot" onclick="currentSlide(2, 'slideshow-2')"></span>
+                        <span class="dot" onclick="currentSlide(3, 'slideshow-2')"></span>
+                        <span class="dot" onclick="currentSlide(4, 'slideshow-2')"></span>
+                        <span class="dot" onclick="currentSlide(5, 'slideshow-2')"></span>
+                        <span class="dot" onclick="currentSlide(6, 'slideshow-2')"></span>
+                        <span class="dot" onclick="currentSlide(7, 'slideshow-2')"></span>
+                        <span class="dot" onclick="currentSlide(8, 'slideshow-2')"></span>
+                        <span class="dot" onclick="currentSlide(9, 'slideshow-2')"></span>
+                        <span class="dot" onclick="currentSlide(10, 'slideshow-2')"></span>
+                        <span class="dot" onclick="currentSlide(11, 'slideshow-2')"></span>
+                        <span class="dot" onclick="currentSlide(12, 'slideshow-2')"></span>
+                    </div>
                 </div>
             </div>
 
