@@ -279,6 +279,8 @@ header {
 .cta-hero {
     padding: 8px 20px 8px 20px;
     width: 100%;
+    height: 40px;
+    max-width: 380px;
     background-color: var(--primary);
     border: 1.5px solid var(--primary);
     border-radius: 40px;
@@ -300,6 +302,8 @@ header {
 .cta-kontakt {
     padding: 8px 20px 8px 20px;
     width: 100%;
+    height: 40px;
+    max-width: 380px;
     background-color: var(--primary);
     border: 1.5px solid var(--primary);
     border-radius: 40px;
@@ -609,6 +613,69 @@ footer p {
 
 /* Kode til stor skærm */
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 600px) {
+    /* Hero sektion */
+    .hero {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 60px;
+        align-items: start;
+    }
+    .hero h1 {
+        grid-column: 1;
+        font-size: 2.5rem;
+        justify-self: start;
+    }
+    .hero p {
+        grid-column: 1;
+        max-width: 620px;
+        margin-top: 30px;
+    }
+    .divider {
+        grid-column: 1;
+        max-width: 620px;
+        margin-top: 20px;
+    }
+    .cta-hero {
+        grid-column: 1;
+        margin-top: 30px;
+    }
+    .hero img {
+        grid-column: 2;
+        max-width: 750px;
+        justify-self: end;
+        margin: 0;
+    }
+
+    /* Om mig sektion */
+    .om-mig {
+        flex-direction: row;
+        padding: 60px;
+        justify-content: space-between;
+    }
+    .om-mig p {
+        max-width: 400px;
+    }
+    .om-mig img {
+        max-width: 400px;
+        height: auto;
+        margin: 20px;
+    }
+    .pro-grid {
+        width: 380px;
+    }
+    .kode-grid {
+        width: 380px;
+    }
     
+    /* Portfolio sektion */
+    .portfolio {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        padding: 60px;
+        gap: 30px;
+    }
+    .modal {
+        max-width: 500px;
+    }
 }
