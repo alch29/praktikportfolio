@@ -51,7 +51,6 @@ h1 {
     -1px  1px 0 var(--primary),
     1px  1px 0 var(--primary),
     5px  5px 0 var(--primary);
-    text-align: center;
 }
 
 h2 {
@@ -223,12 +222,18 @@ header {
     margin-top: 20px;
 }
 
+.hero h1 {
+    text-align: center;
+    max-width: 320px;
+}
+
 .om-mig {
     background-color: var(--secondary-back);
     grid-column: span 3;
     padding: 35px;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .om-mig h2 {
@@ -241,10 +246,12 @@ header {
 
 .om-mig p {
     margin: 20px 0 20px 0;
+    max-width: 380px;
 }
 
 .om-mig img {
     width: 100%;
+    max-width: 350px;
     margin-bottom: 20px;
 }
 
@@ -274,6 +281,7 @@ header {
     border: 6px dotted var(--primary);
     border-bottom: 0;
     margin: 10px 0 0 0;
+    max-width: 320px;
 }
 
 .cta-hero {
@@ -331,6 +339,7 @@ header {
     border-radius: 10px;
     gap: 10px;
     padding: 10px;
+    max-width: 380px;
 }
 
 .pro-grid p {
@@ -361,6 +370,7 @@ header {
     box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.3);
     border-radius: 10px;
     padding: 10px;
+    max-width: 380px;
 }
 
 .kode-ikon {
@@ -407,6 +417,20 @@ header {
 .some-flex i:hover {
     color: var(--primary);
     transform: scale(1.2);
+}
+
+.kontakt-flex-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.kontakt-top {
+    align-self: center;
+}
+
+.kontakt-bottom p{
+    text-align: center;
 }
 
 .portfolio-item {
@@ -480,7 +504,7 @@ header {
     z-index: 100;
     width: 80%;
     box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.3);
-    max-height: 500px;
+    /* max-height: 800px; */
     overflow: hidden;
 }
 
@@ -616,50 +640,38 @@ footer p {
 @media only screen and (min-width: 600px) {
     /* Hero sektion */
     .hero {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        flex-direction: row;
         padding: 60px;
-        align-items: start;
+        justify-content: space-between;
+        align-items: center;
     }
     .hero h1 {
-        grid-column: 1;
         font-size: 2.5rem;
-        justify-self: start;
     }
     .hero p {
-        grid-column: 1;
-        max-width: 620px;
+        max-width: 400px;
         margin-top: 30px;
     }
     .divider {
-        grid-column: 1;
-        max-width: 620px;
         margin-top: 20px;
     }
     .cta-hero {
-        grid-column: 1;
         margin-top: 30px;
     }
     .hero img {
-        grid-column: 2;
-        max-width: 750px;
-        justify-self: end;
-        margin: 0;
+        max-width: 600px;
+        margin: 0 0 0 40px;
     }
 
     /* Om mig sektion */
     .om-mig {
-        flex-direction: row;
-        padding: 60px;
-        justify-content: space-between;
+        align-items: center;
     }
     .om-mig p {
         max-width: 400px;
     }
     .om-mig img {
-        max-width: 400px;
-        height: auto;
-        margin: 20px;
+        max-width: 350px;
     }
     .pro-grid {
         width: 380px;
@@ -676,6 +688,49 @@ footer p {
         gap: 30px;
     }
     .modal {
-        max-width: 500px;
+        max-width: 400px;
+    }
+    .portfolio-item {
+        max-width: 400px;
+    }
+
+    /* Kontakt sektion */
+    .kontakt-flex-container {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        gap: 30px;
+    }
+    .kontakt h2 {
+        margin-bottom: 30px;
+    }
+    .cta-kontakt {
+        margin-bottom: 0;
+    }
+    .kontakt-bottom {
+        width: 380px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    /* Om mig sektion */
+    .om-mig {
+        flex-direction: row;
+        padding: 60px;
+        justify-content: space-between;
+    }
+    .om-mig p {
+        max-width: 400px;
+    }
+    .om-mig img {
+        max-width: 350px;
+        margin: 0 30px 0 30px;
+    }
+    .pro-grid {
+        width: 380px;
+    }
+    .kode-grid {
+        width: 380px;
     }
 }
