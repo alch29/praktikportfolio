@@ -538,7 +538,7 @@ header {
     display: none;   
 }
 
-.prev, .next {
+.prev, .next, .prev2, .next2 {
     cursor: pointer;
     position: absolute;
     top: 50%;
@@ -552,7 +552,7 @@ header {
     display: flex;
     justify-content: center;
 }
-.next {
+.next, .next2 {
     right: 0;
     border-radius: 6px 0 0 6px;
 }
@@ -572,8 +572,27 @@ header {
     align-self: center;
 }
 
+.next2 img{
+    width: 20px;
+    height: auto;
+    transform: rotate(180deg);
+    margin: 0;
+    align-self: center;
+}
+
+.prev2 img {
+    width: 20px;
+    height: auto;
+    margin: 0;
+    align-self: center;
+}
+
 .prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.6);
+    background-color: rgba(18, 85, 79, 0.6);
+}
+
+.prev2:hover, .next2:hover {
+    background-color: rgba(50, 128, 121, 0.3);
 }
 
 .dots-container {
