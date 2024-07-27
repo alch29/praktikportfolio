@@ -42,7 +42,7 @@
                 </ul>
             </div>
     </header>
-    <main class="grid-container">
+    <main>
 
         <section class="hero" id="hero">
             <div class="flex-hero">
@@ -52,14 +52,6 @@
                 <button class="cta-hero">Se mit procesportfolio</button>
             </div>
             <img src="img/frog-hero.png" alt="Simpel illustration af en frø, der holder en stor blyant">
-            <!-- <div class="pile">  
-                <div class="pil-left">
-                    <span></span>
-                </div>
-                <div class="pil-right">
-                    <span></span>
-                </div>
-            </div>  -->
         </section>
 
         <section class="om-mig" id="om-mig">
@@ -117,9 +109,28 @@
         </section>
         <section class="portfolio" id="portfolio">
             <h2>PORTFOLIO</h2>
-            <div data-modal-target="#modal" class="portfolio-item">
-                <video loop muted autoplay aria-label="Animation af Pentia Mobile logo."><source src="img/pentia-logo-animation-updated2_1.mp4" type="video/mp4"></video>
+            
+            <div class="portfolio-grid">
+                <div data-modal-target="#modal" class="portfolio-item">
+                    <video loop muted autoplay aria-label="Animation af Pentia Mobile logo."><source src="img/pentia-logo-animation-updated2_1.mp4" type="video/mp4"></video>
+                </div>
+                <div data-modal-target="#modal-2" class="portfolio-item">
+                    <img src="img/groenne-horisonter-mockup.jpg" alt="Mockup af en hjemmeside, lavet til en fiktiv café, som hedder Grønne Horisonter.">
+                </div>
+                <div data-modal-target="#modal-3" class="portfolio-item">
+                    <img src="img/instagram-opslag/instaopslag-slide1.jpg" alt="Instagram-opslag til Ungdommens Røde Kors, hvor der står: Hvorfor vil unge blive frivillige?, efterfulgt af en ikon og derefter en tekst der lyder: At hjælpe andre.">
+                </div>
+                <div data-modal-target="#modal-4" class="portfolio-item">
+                    <video loop muted autoplay aria-label="Animation af en blyant, som tegner en cirkel og hopper."><source src="img/pencil-animation_1.mp4" type="video/mp4"></video>
+                </div>
+                <div data-modal-target="#modal-5" class="portfolio-item">
+                    <img src="img/visitkort-logo.jpg" alt="Design af logo og visitkort, til Jyderup Haveservice.">
+                </div>
+                <div data-modal-target="#modal-6" class="portfolio-item">
+                    <img src="img/tegneserie/tegneserie-mockup.jpg" alt="To kopier af en tegneserie, med en illustration af en kat på omslaget.">
+                </div>
             </div>
+
 
             <div class="modal" id="modal">
                 <div class="modal-header">
@@ -134,10 +145,6 @@
                 </div>
             </div>
 
-            <div data-modal-target="#modal-2" class="portfolio-item">
-                <img src="img/groenne-horisonter-mockup.jpg" alt="Mockup af en hjemmeside, lavet til en fiktiv café, som hedder Grønne Horisonter.">
-            </div>
-
             <div class="modal" id="modal-2">
                 <div class="modal-header">
                     <h3>Design af hjemmeside til Grønne Horisonter</h3>
@@ -150,10 +157,6 @@
                     <p>Denne mock-up har jeg lavet i forbindelse med en skoleopgave på 2. semester, hvor jeg skulle designe en hjemmeside til en fiktiv vegansk og økologisk café i Aarhus. Selve designet af hjemmesiden er lavet i Figma og til mock-uppen har jeg brugt Photoshop, samt et billede taget fra freepik.com.</p>
                     <img src="img/groenne-horisonter.jpg" alt="Figma-mockup af forsiden på en hjemmeside, lavet til en fiktiv café, som hedder Grønne Horisonter.">
                 </div>
-            </div>
-
-            <div data-modal-target="#modal-3" class="portfolio-item">
-                <img src="img/instagram-opslag/instaopslag-slide1.jpg" alt="Instagram-opslag til Ungdommens Røde Kors, hvor der står: Hvorfor vil unge blive frivillige?, efterfulgt af en ikon og derefter en tekst der lyder: At hjælpe andre.">
             </div>
 
             <div class="modal" id="modal-3">
@@ -200,10 +203,6 @@
                 </div>
             </div>
 
-            <div data-modal-target="#modal-4" class="portfolio-item">
-                <video loop muted autoplay aria-label="Animation af en blyant, som tegner en cirkel og hopper."><source src="img/pencil-animation_1.mp4" type="video/mp4"></video>
-            </div>
-
             <div class="modal" id="modal-4">
                 <div class="modal-header">
                     <h3>CSS- og Illustrator animation</h3>
@@ -217,10 +216,6 @@
                 </div>
             </div>
 
-            <div data-modal-target="#modal-5" class="portfolio-item">
-                <img src="img/visitkort-logo.jpg" alt="Design af logo og visitkort, til Jyderup Haveservice.">
-            </div>
-
             <div class="modal" id="modal-5">
                 <div class="modal-header">
                     <h3>Logo og visitkort til Jyderup Haveservice</h3>
@@ -232,10 +227,6 @@
                 <div class="modal-body">
                     <p>Her har jeg gjort brug af Illustrator, for at designe dette logo til Jyderup Haverservice. Mock-uppen af visitkortene er lavet i Photoshop, med et billede taget fra freepik.com.</p>
                 </div>
-            </div>
-
-            <div data-modal-target="#modal-6" class="portfolio-item">
-                <img src="img/tegneserie/tegneserie-mockup.jpg" alt="To kopier af en tegneserie, med en illustration af en kat på omslaget.">
             </div>
 
             <div class="modal" id="modal-6">
