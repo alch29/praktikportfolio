@@ -213,6 +213,12 @@ header {
     flex-direction: column;
 }
 
+.flex-hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .hero img {
     width: 100%;
     margin: 20px 0px 20px 0px;
@@ -220,6 +226,7 @@ header {
 
 .hero p {
     margin-top: 20px;
+    max-width: 380px;
 }
 
 .hero h1 {
@@ -237,11 +244,7 @@ header {
 }
 
 .om-mig h2 {
-    align-self: center;
-}
-
-.om-mig h3 {
-    margin-top: 20px;
+    text-align: center;
 }
 
 .om-mig p {
@@ -255,10 +258,20 @@ header {
     margin-bottom: 20px;
 }
 
+.om-mig-bund {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .portfolio {
     background-color: var(--primary-back);
     grid-column: span 3;
     padding: 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .portfolio h2 {
@@ -281,7 +294,8 @@ header {
     border: 6px dotted var(--primary);
     border-bottom: 0;
     margin: 10px 0 0 0;
-    max-width: 320px;
+    width: 100%;
+    max-width: 380px;
 }
 
 .cta-hero {
@@ -435,6 +449,7 @@ header {
 
 .portfolio-item {
     margin: 20px 0 20px 0;
+    max-width: 400px;
 }
 
 .portfolio-item :first-child {
@@ -649,7 +664,6 @@ footer p {
         font-size: 2.5rem;
     }
     .hero p {
-        max-width: 400px;
         margin-top: 30px;
     }
     .divider {
@@ -672,12 +686,6 @@ footer p {
     }
     .om-mig img {
         max-width: 350px;
-    }
-    .pro-grid {
-        width: 380px;
-    }
-    .kode-grid {
-        width: 380px;
     }
     
     /* Portfolio sektion */
@@ -732,5 +740,8 @@ footer p {
     }
     .kode-grid {
         width: 380px;
+    }
+    .om-mig-bund {
+        width: auto;
     }
 }
