@@ -231,6 +231,14 @@ header {
     max-width: 380px;
 }
 
+.hero a {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+}
+
 .om-mig {
     background-color: var(--secondary-back);
     padding: 35px;
@@ -279,6 +287,14 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.kontakt a {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
 }
 
 /* komponenter */
